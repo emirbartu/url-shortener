@@ -1,4 +1,5 @@
 <?php
+// This comment is added to create a new commit in the integration-branch
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
