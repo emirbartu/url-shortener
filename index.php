@@ -12,10 +12,10 @@ use Endroid\QrCode\RoundBlockSizeMode;
 use Endroid\QrCode\Writer\PngWriter;
 
 // Database connection
-$host = 'localhost';
-$dbname = 'url_shortener';
-$username = 'url_user';
-$password = 'password';
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'url_shortener';
+$username = getenv('DB_USERNAME') ?: 'url_user';
+$password = getenv('DB_PASSWORD') ?: 'password';
 
 try {
     $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
